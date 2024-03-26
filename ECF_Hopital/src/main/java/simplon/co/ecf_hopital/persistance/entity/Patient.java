@@ -15,7 +15,7 @@ public class Patient {
     @Column(name = "prenom")
     private String prenom;
     @Column(name = "numsecuritesocial")
-    private String numSecuriteSocial;
+    private int numSecuriteSocial;
     @Column(name = "edate")
     private Date edate;
     @Column(name ="sdate")
@@ -45,11 +45,11 @@ public class Patient {
         this.prenom = prenom;
     }
 
-    public String getNumSecuriteSocial() {
+    public int getNumSecuriteSocial() {
         return numSecuriteSocial;
     }
 
-    public void setNumSecuriteSocial(String numSecuriteSocial) {
+    public void setNumSecuriteSocial(int numSecuriteSocial) {
         this.numSecuriteSocial = numSecuriteSocial;
     }
 
