@@ -15,7 +15,7 @@ public class Patient {
     @Column(name = "prenom")
     private String prenom;
     @Column(name = "numsecuritesocial")
-    private String numsecuritesocial;
+    private String numSecuriteSocial;
     @Column(name = "edate")
     private Date edate;
     @Column(name ="sdate")
