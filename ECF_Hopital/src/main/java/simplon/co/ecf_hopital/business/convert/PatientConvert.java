@@ -1,11 +1,13 @@
 package simplon.co.ecf_hopital.business.convert;
 
+import org.springframework.stereotype.Component;
 import simplon.co.ecf_hopital.business.dto.PatientDto;
 import simplon.co.ecf_hopital.persistance.entity.Patient;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Component
 public class PatientConvert {
     private static PatientConvert instace;
 
