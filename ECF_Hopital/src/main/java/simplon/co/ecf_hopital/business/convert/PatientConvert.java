@@ -9,15 +9,15 @@ import java.util.List;
 
 @Component
 public class PatientConvert {
-    private static PatientConvert instace;
+    private static PatientConvert instance;
 
     private PatientConvert(){
 
     }
     public static PatientConvert getInstance(){
-        if (instace == null)
-            instace = new PatientConvert();
-        return instace;
+        if (instance == null)
+            instance = new PatientConvert();
+        return instance;
     }
 
     public Patient convertDtoToEntity(PatientDto patientDto){
