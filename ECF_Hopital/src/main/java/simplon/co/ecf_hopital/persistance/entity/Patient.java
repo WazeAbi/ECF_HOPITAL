@@ -20,6 +20,9 @@ public class Patient {
     private Date edate;
     @Column(name ="sdate")
     private Date sdate;
+    @OneToOne
+    @JoinColumn(name = "idLit")
+    private Lit lit;
 
     public int getId() {
         return id;
