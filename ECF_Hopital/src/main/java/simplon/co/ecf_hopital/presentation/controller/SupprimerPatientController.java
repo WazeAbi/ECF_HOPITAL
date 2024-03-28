@@ -8,6 +8,7 @@ import simplon.co.ecf_hopital.business.service.IPatientService;
 
 @RestController
 public class SupprimerPatientController {
+
     private
     IPatientService patientService;
    @DeleteMapping("/patients/{id}")
