@@ -1,8 +1,7 @@
-package simplon.co.ecf_hopital.business.service.Patient;
+package simplon.co.ecf_hopital.business.service.patient;
 
 import org.springframework.stereotype.Service;
 import simplon.co.ecf_hopital.business.dto.PatientDto;
-import simplon.co.ecf_hopital.persistance.entity.Patient;
 
 import java.util.List;
 @Service

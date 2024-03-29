@@ -1,4 +1,4 @@
-package simplon.co.ecf_hopital.business.service.Patient;
+package simplon.co.ecf_hopital.business.service.patient;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
