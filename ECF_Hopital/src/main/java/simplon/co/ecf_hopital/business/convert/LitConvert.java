@@ -23,6 +23,7 @@ public class LitConvert {
         Lit lit = new Lit();
         lit.setIdLit(litDto.getIdLit());
         lit.setOccupe(litDto.isOccupe());
+        lit.setChambre(litDto.getChambreDto() != null ? ChambreConvert.getInstance().convertDtoToEntity(litDto.getChambreDto()) : null );
         return lit;
     }
 
@@ -30,6 +31,7 @@ public class LitConvert {
         LitDto litDto = new LitDto();
         litDto.setIdLit(litDto.getIdLit());
         litDto.setOccupe(lit.isOccupe());
+        litDto.setChambreDto(lit.getChambre() != null ? ChambreConvert.getInstance().convertEntityToDto(lit.getChambre()) : null );
         return litDto;
     }
 

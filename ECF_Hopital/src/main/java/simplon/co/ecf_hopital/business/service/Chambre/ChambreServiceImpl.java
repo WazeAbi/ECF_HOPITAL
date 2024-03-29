@@ -1,7 +1,9 @@
 package simplon.co.ecf_hopital.business.service.Chambre;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import simplon.co.ecf_hopital.business.convert.ChambreConvert;
 import simplon.co.ecf_hopital.business.dto.ChambreDto;
+import simplon.co.ecf_hopital.persistance.entity.Chambre;
 import simplon.co.ecf_hopital.persistance.repository.IChambreRepository;
 
 import java.util.List;
@@ -13,19 +15,18 @@ public class ChambreServiceImpl implements IChambreService {
 
     @Override
     public List<ChambreDto> ListerLesLits() {
-        //TODO
-        return null;
+        final List<Chambre> result = repoChambre.findAll();
+        return ChambreConvert.getInstance().convertListEntityToListDto(result);
+
     }
 
     @Override
     public ChambreDto recupererLitParId(int id) {
-        //TODO
-        return null;
+        return convertChambre.convertEntityToDto(repoChambre.getReferenceById(id));
     }
-
     @Autowired
-    public void setRepo(IChambreRepository repo) {
-        this.repo = repo;
+    public void setRepoChambre(IChambreRepository repoChambre) {
+        this.repoChambre = repoChambre;
     }
 
     @Autowired
