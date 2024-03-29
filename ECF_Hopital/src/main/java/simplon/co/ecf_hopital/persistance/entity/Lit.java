@@ -5,7 +5,10 @@ import jakarta.persistence.*;
 @Entity
 @Table(name = "Lit")
 public class Lit {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int idLit;
+    @Column(name = "occupe")
     private boolean occupe;
 
     public int getIdLit() {

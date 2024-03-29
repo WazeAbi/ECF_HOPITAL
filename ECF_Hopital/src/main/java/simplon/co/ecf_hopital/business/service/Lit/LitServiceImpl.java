@@ -1,4 +1,4 @@
-package simplon.co.ecf_hopital.business.service;
+package simplon.co.ecf_hopital.business.service.Lit;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import simplon.co.ecf_hopital.business.convert.LitConvert;

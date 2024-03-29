@@ -1,5 +1,8 @@
 package simplon.co.ecf_hopital.business.dto;
 
+
+import simplon.co.ecf_hopital.persistance.entity.Lit;
+
 import java.util.Date;
 
 public class PatientDto {
@@ -9,6 +12,16 @@ public class PatientDto {
     private int numSecuriteSocial;
     private Date edate;
     private Date sdate;
+    private LitDto litDto;
+
+
+    public LitDto getLitDto() {
+        return litDto;
+    }
+
+    public void setLitDto(LitDto litDto) {
+        this.litDto = litDto;
+    }
 
     public int getId() {
         return id;

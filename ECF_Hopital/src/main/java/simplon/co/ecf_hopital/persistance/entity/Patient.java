@@ -1,16 +1,17 @@
 package simplon.co.ecf_hopital.persistance.entity;
 
 import jakarta.persistence.*;
+import simplon.co.ecf_hopital.business.dto.LitDto;
 
 import java.util.Date;
 
 @Entity
-@Table(name="patient")
+@Table(name = "patient")
 public class Patient {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    @Column(name= "nom")
+    @Column(name = "nom")
     private String nom;
     @Column(name = "prenom")
     private String prenom;
@@ -18,11 +19,19 @@ public class Patient {
     private int numSecuriteSocial;
     @Column(name = "edate")
     private Date edate;
-    @Column(name ="sdate")
+    @Column(name = "sdate")
     private Date sdate;
     @OneToOne
     @JoinColumn(name = "idLit")
     private Lit lit;
+
+    public Lit getLit() {
+        return lit;
+    }
+
+    public void setLit(Lit lit) {
+        this.lit = lit;
+    }
 
     public int getId() {
         return id;

@@ -1,4 +1,4 @@
-package simplon.co.ecf_hopital.business.service;
+package simplon.co.ecf_hopital.business.service.Patient;
 
 import org.springframework.stereotype.Service;
 import simplon.co.ecf_hopital.business.dto.PatientDto;

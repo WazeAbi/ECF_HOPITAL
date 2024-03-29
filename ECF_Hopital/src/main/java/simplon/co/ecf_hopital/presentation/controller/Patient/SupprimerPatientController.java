@@ -1,10 +1,10 @@
-package simplon.co.ecf_hopital.presentation.controller;
+package simplon.co.ecf_hopital.presentation.controller.Patient;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
-import simplon.co.ecf_hopital.business.service.IPatientService;
+import simplon.co.ecf_hopital.business.service.Patient.IPatientService;
 
 @RestController
 public class SupprimerPatientController {

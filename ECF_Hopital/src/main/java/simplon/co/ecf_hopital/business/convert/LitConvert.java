@@ -1,11 +1,12 @@
 package simplon.co.ecf_hopital.business.convert;
 
+import org.springframework.stereotype.Component;
 import simplon.co.ecf_hopital.business.dto.LitDto;
 import simplon.co.ecf_hopital.persistance.entity.Lit;
 
 import java.util.ArrayList;
 import java.util.List;
-
+@Component
 public class LitConvert {
     private static LitConvert instance;
 

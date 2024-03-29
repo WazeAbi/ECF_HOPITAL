@@ -1,10 +1,10 @@
-package simplon.co.ecf_hopital.presentation.controller;
+package simplon.co.ecf_hopital.presentation.controller.Patient;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 import simplon.co.ecf_hopital.business.dto.PatientDto;
-import simplon.co.ecf_hopital.business.service.IPatientService;
+import simplon.co.ecf_hopital.business.service.Patient.IPatientService;
 
 import java.util.List;
 
