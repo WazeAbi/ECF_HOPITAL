@@ -7,5 +7,5 @@ import java.util.List;
 @Service
 public interface ILitService {
     List<LitDto> ListerLesLits();
-    LitDto recupererLitParId(final int id);
+    LitDto recupererLitParId(final int idLit);
 }

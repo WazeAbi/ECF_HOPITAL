@@ -1,6 +1,7 @@
 package simplon.co.ecf_hopital.business.service.lit;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import simplon.co.ecf_hopital.business.convert.LitConvert;
 
 import simplon.co.ecf_hopital.business.dto.LitDto;
@@ -8,7 +9,7 @@ import simplon.co.ecf_hopital.persistance.entity.Lit;
 import simplon.co.ecf_hopital.persistance.repository.ILitRepository;
 
 import java.util.List;
-
+@Service
 public class LitServiceImpl implements ILitService {
     private ILitRepository repoLit;
     private LitConvert convertLit;
@@ -21,8 +22,8 @@ public class LitServiceImpl implements ILitService {
     }
 
     @Override
-    public LitDto recupererLitParId(int id) {
-        return convertLit.convertEntityToDto(repoLit.getReferenceById(id));
+    public LitDto recupererLitParId(int idLit) {
+        return convertLit.convertEntityToDto(repoLit.getReferenceById(idLit));
     }
 
     @Autowired

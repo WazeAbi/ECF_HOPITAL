@@ -8,6 +8,7 @@ import simplon.co.ecf_hopital.persistance.repository.IServiceRepository;
 
 import java.util.List;
 
+@org.springframework.stereotype.Service
 public class ServiceServiceImpl implements IServiceService {
     private IServiceRepository serviceRepository;
     private ServiceConvert serviceConvert;
