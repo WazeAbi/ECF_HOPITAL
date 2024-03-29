@@ -11,6 +11,19 @@ public class Lit {
     @Column(name = "occupe")
     private boolean occupe;
 
+
+    @OneToOne
+    @JoinColumn(name = "idchambre")
+    private Chambre chambre;
+
+    public Chambre getChambre() {
+        return chambre;
+    }
+
+    public void setChambre(Chambre chambre) {
+        this.chambre = chambre;
+    }
+
     public int getIdLit() {
         return idLit;
     }

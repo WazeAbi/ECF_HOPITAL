@@ -8,4 +8,12 @@ public class Chambre {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int idchambre;
+
+    public int getIdchambre() {
+        return idchambre;
+    }
+
+    public void setIdchambre(int idchambre) {
+        this.idchambre = idchambre;
+    }
 }

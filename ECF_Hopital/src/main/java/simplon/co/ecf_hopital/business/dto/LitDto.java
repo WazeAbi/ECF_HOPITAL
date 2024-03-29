@@ -3,6 +3,15 @@ package simplon.co.ecf_hopital.business.dto;
 public class LitDto {
     private int idLit;
     private boolean occupe;
+    private ChambreDto chambreDto;
+
+    public ChambreDto getChambreDto() {
+        return chambreDto;
+    }
+
+    public void setChambreDto(ChambreDto chambreDto) {
+        this.chambreDto = chambreDto;
+    }
 
     public int getIdLit() {
         return idLit;
