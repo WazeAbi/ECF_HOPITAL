@@ -25,12 +25,16 @@ public class ChambreConvert {
     public Chambre convertDtoToEntity(ChambreDto chambreDto) {
         Chambre chambre = new Chambre();
         chambre.setIdchambre(chambreDto.getIdchambre());
+        chambre.setNumerodeChambre(chambreDto.getNumeroDeChambre());
+        chambre.setService(chambreDto.getServiceDto()!= null ? ServiceConvert.getInstance().convertDtoToEntity(chambreDto.getServiceDto()) : null );
         return chambre;
     }
 
     public ChambreDto convertEntityToDto(Chambre chambre) {
         ChambreDto chambreDto = new ChambreDto();
         chambreDto.setIdchambre(chambre.getIdchambre());
+        chambreDto.setNumeroDeChambre(chambre.getNumerodeChambre());
+        chambreDto.setServiceDto(chambre.getService() != null ? ServiceConvert.getInstance().convertEntityToDto(chambre.getService()) : null );
         return chambreDto;
     }
 

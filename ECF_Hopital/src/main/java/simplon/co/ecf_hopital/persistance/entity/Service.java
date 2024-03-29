@@ -8,6 +8,7 @@ public class Service {
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int idservice;
+    @Column(name = "nomdeservice")
     private String nomdeservice;
 
     public int getIdservice() {

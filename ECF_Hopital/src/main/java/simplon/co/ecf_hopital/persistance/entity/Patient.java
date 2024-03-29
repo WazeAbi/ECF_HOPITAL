@@ -22,7 +22,7 @@ public class Patient {
     @Column(name = "sdate")
     private Date sdate;
     @OneToOne
-    @JoinColumn(name = "idLit")
+    @JoinColumn(name = "idlit")
     private Lit lit;
 
     public Lit getLit() {
