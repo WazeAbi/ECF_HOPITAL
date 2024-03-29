@@ -3,7 +3,7 @@ package simplon.co.ecf_hopital.persistance.entity;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "Lit")
+@Table(name = "lit")
 public class Lit {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
